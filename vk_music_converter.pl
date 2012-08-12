@@ -47,8 +47,9 @@ sub ProcessFile {
     $fh->binmode;
 
     my $read_flag = 0;
+    my $mp3_header = '00000000:  49  44  33';
     while(<$rd>){
-        if ( $_ =~ /00000000:  49  44  33/ or $read_flag) {
+        if ( $_ =~ /$mp3_header/ or $read_flag) {
     	    $read_flag = 1;
     	    my @hex_array = (split(/\s+/,$_))[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
 	    my $hex = join('',@hex_array);

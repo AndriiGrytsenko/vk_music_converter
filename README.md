@@ -1,7 +1,7 @@
 vk_music_converter
 ==================
 
-This small script helps you to convert unreadable audio files downloaded from **vk.com** site into normal mp3. Also after normalization script tries to read MP3 Tag and rename file to **'artist - title.mp3'**
+This small script helps you to convert unreadable audio files(from chrome cache) which were downloaded from **vk.com** site into normal mp3. Also after normalization script tries to read MP3 Tag and rename file to **'artist - title.mp3'**
 
 Pre-requirements  
 ----------------
